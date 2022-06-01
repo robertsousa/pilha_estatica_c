@@ -58,8 +58,17 @@ void pilha_entrar(){
     }
 }
 
+//Retirar o ultimo elemento da pilha
 void pilha_sair(){
-
+    //Verifica se a pilha está vazia
+    //Se estiver
+    if(pilha.ini == pilha.fim){
+        printf("\nA pilha está vazia, impossível desempilhar!\n\n");
+        system("Pause");
+    }else{ // retira o ultimo elemento se tiver
+        pilha.dados[pilha.fim-1] = 0;
+        pilha.fim--;
+    }
 }
 
 void pilha_mostrar(){
