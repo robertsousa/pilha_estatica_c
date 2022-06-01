@@ -71,8 +71,14 @@ void pilha_sair(){
     }
 }
 
+//Mostrar o conteúdo da pilha
 void pilha_mostrar(){
-
+    int i;
+     printf("[ ");
+     for(i = 0; i < tamanho; i++){
+        printf("%d ", pilha.dados[i]);
+     }
+     printf(" ]\n\n");
 }
 
 void menu_mostrar(){
