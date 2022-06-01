@@ -81,6 +81,10 @@ void pilha_mostrar(){
      printf(" ]\n\n");
 }
 
+//Mostrar o menu de opções
 void menu_mostrar(){
-
+    printf("\nEscolha uma opção: ");
+    printf("1 - Empilhar\n");
+    printf("2 - Desempilhar\n");
+    printf("0 - Sair\n\n");
 }
