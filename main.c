@@ -12,7 +12,7 @@ struct tpilha{
 };
 
 //Variaveis globais
-typedef struct tpilha pilha;
+struct tpilha pilha;
 int op;
 
 //prototipação
@@ -83,8 +83,9 @@ void pilha_mostrar(){
 
 //Mostrar o menu de opções
 void menu_mostrar(){
-    printf("\nEscolha uma opção: ");
+    printf("\nEscolha uma opção: \n");
     printf("1 - Empilhar\n");
     printf("2 - Desempilhar\n");
     printf("0 - Sair\n\n");
+    printf("> ");
 }
